@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vedantyetekar/backend.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Vedant Yetekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vedantyetekar/backend/issues"
+  },
+  "homepage": "https://github.com/vedantyetekar/backend#readme"
+}
