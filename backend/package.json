@@ -3,21 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vedantyetekar/backend.git"
   },
-  "keywords": [
-    "node"
-  ],
-  "author": "Vedant Yetekar",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vedantyetekar/backend/issues"
   },
-  "homepage": "https://github.com/vedantyetekar/backend#readme"
+  "homepage": "https://github.com/vedantyetekar/backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
 }
