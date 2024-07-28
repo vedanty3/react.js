@@ -1,15 +1,30 @@
-import { Component as ClassComponent } from "react";
+import React, { Component as ClassComponent } from "react";
+
+const Component = () => {
+  const greet = () => {
+    alert("hello world!");
+  };
+
+  return <button onClick={greet}>click</button>;
+};
 
 /*
-const Component = () => {
-  return <div>I'm a component.</div>;
-};
-*/
-
 class Component extends ClassComponent {
   render() {
     return <div>I'm a component.</div>;
   }
 }
+*/
+
+/*
+const Component = () => {
+  return React.createElement(
+    "div",
+    null,
+    "outer",
+    React.createElement("div", null, "inner")
+  );
+};
+*/
 
 export default Component;
