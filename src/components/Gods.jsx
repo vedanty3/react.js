@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import God from "./God";
 import "./Gods.css";
 
@@ -121,14 +121,38 @@ const GODS_DATA = [
   },
 ];
 
+class Gods extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      gods: GODS_DATA,
+    };
+  }
+  render() {
+    return (
+      <div className="gods-container">
+        {this.gods &&
+          this.gods.map(({ name, email, dialogue }, key) => (
+            <God key={key} name={name} email={email} dialogue={dialogue} />
+          ))}
+      </div>
+    );
+  }
+}
+
+/*
 const Gods = () => {
+  const [gods, setGods] = useState(GODS_DATA);
+
   return (
     <div className="gods-container">
-      {GODS_DATA.map(({ name, email, dialogue }, key) => (
-        <God key={key} name={name} email={email} dialogue={dialogue} />
-      ))}
+      {gods &&
+        gods.map(({ name, email, dialogue }, key) => (
+          <God key={key} name={name} email={email} dialogue={dialogue} />
+        ))}
     </div>
   );
 };
+*/
 
 export default Gods;
