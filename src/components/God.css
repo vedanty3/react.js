@@ -1,0 +1,29 @@
+.container {
+  width: 300px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgb(250, 153, 84);
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: rgb(73, 73, 69);
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p,
+em {
+  font-size: 12px;
+}
