@@ -3,6 +3,7 @@ import ClassComponentWithState from "./components/ClassComponentWithState";
 import Component from "./components/Component";
 import ConditionalRendering from "./components/ConditionalRendering";
 import FormHandling from "./components/FormHandling";
+import FormValidation from "./components/FormValidation";
 import Gods from "./components/Gods";
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
       <ClassComponentWithState /> 
       <Gods />
       <FormHandling />
-      */}
       <ConditionalRendering />
+      */}
+      <FormValidation />
     </div>
   );
 }
