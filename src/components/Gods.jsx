@@ -131,8 +131,8 @@ class Gods extends React.Component {
   render() {
     return (
       <div className="gods-container">
-        {this.gods &&
-          this.gods.map(({ name, email, dialogue }, key) => (
+        {this.state.gods &&
+          this.state.gods.map(({ name, email, dialogue }, key) => (
             <God key={key} name={name} email={email} dialogue={dialogue} />
           ))}
       </div>
