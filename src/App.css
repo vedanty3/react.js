@@ -11,5 +11,7 @@
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
+  flex-direction: column;
+  gap: 30px;
   /* background-image: url("../assets/shiva.jpg"); */
 }
