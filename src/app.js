@@ -13,6 +13,7 @@ import ComponentDidMount from "./components/ComponentDidMount";
 import ComponentDidUpdate from "./components/ComponentDidUpdate";
 import ShouldComponentUpdate from "./components/ShouldComponentUpdate";
 import ComponentWillUnmount from "./components/ComponentWillUnmount";
+import UseEffectHook from "./components/UseEffectHook";
 
 const names = [
   "Alice",
@@ -64,9 +65,21 @@ function App() {
         <button onClick={changeName}>change name</button>
       </div>
       <ShouldComponentUpdate />
-    */}
-      {show && <ComponentWillUnmount />}
-      <button onClick={() => setShow((prevState) => !prevState)}>toggle</button>
+      <div>
+        {show && <ComponentWillUnmount />}
+        <button onClick={() => setShow((prevState) => !prevState)}>
+          toggle
+        </button>
+      </div>
+        */}
+      <div>
+        <h4>Counter: {counter}</h4>
+        <button onClick={handleClick}>plus</button>
+        {show && <UseEffectHook />}
+        <button onClick={() => setShow((prevState) => !prevState)}>
+          toggle
+        </button>
+      </div>
     </div>
   );
 }
