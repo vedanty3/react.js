@@ -12,6 +12,7 @@ import RenderMethod from "./components/RenderMethod";
 import ComponentDidMount from "./components/ComponentDidMount";
 import ComponentDidUpdate from "./components/ComponentDidUpdate";
 import ShouldComponentUpdate from "./components/ShouldComponentUpdate";
+import ComponentWillUnmount from "./components/ComponentWillUnmount";
 
 const names = [
   "Alice",
@@ -29,6 +30,7 @@ const names = [
 function App() {
   const [name, setName] = useState("Vedant Yetekar");
   const [counter, setCounter] = useState(0);
+  const [show, setShow] = useState(true);
 
   const handleClick = () => {
     setCounter((counter) => counter + 1);
@@ -61,8 +63,10 @@ function App() {
         <ComponentDidUpdate name={name} />
         <button onClick={changeName}>change name</button>
       </div>
-    */}
       <ShouldComponentUpdate />
+    */}
+      {show && <ComponentWillUnmount />}
+      <button onClick={() => setShow((prevState) => !prevState)}>toggle</button>
     </div>
   );
 }
