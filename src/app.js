@@ -14,6 +14,9 @@ import ComponentDidUpdate from "./components/ComponentDidUpdate";
 import ShouldComponentUpdate from "./components/ShouldComponentUpdate";
 import ComponentWillUnmount from "./components/ComponentWillUnmount";
 import UseEffectHook from "./components/UseEffectHook";
+import Style from "./components/Style";
+import Bootstrap from "./components/Bootstrap";
+import MapFunction from "./components/MapFunction";
 
 const names = [
   "Alice",
@@ -71,7 +74,6 @@ function App() {
           toggle
         </button>
       </div>
-        */}
       <div>
         <h4>Counter: {counter}</h4>
         <button onClick={handleClick}>plus</button>
@@ -80,6 +82,10 @@ function App() {
           toggle
         </button>
       </div>
+      <Style />
+      <Bootstrap />
+        */}
+      <MapFunction />
     </div>
   );
 }
