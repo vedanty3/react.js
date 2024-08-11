@@ -1,0 +1,15 @@
+.box {
+  height: 100px;
+  width: 10px;
+  animation: 1s rotate linear infinite;
+  border-radius: 8px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

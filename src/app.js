@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import "./App.css";
 import ClassComponentWithState from "./components/ClassComponentWithState";
 import Component from "./components/Component";
@@ -17,6 +17,10 @@ import UseEffectHook from "./components/UseEffectHook";
 import Style from "./components/Style";
 import Bootstrap from "./components/Bootstrap";
 import MapFunction from "./components/MapFunction";
+import BootstrapTable from "./components/BootstrapTable";
+import NestedMapFunction from "./components/NestedMapFunction";
+import ReusableComponent from "./components/ReusableComponent";
+import ButtonComponent from "./components/Button";
 
 const names = [
   "Alice",
@@ -42,6 +46,14 @@ function App() {
 
   const changeName = () => {
     setName(names[Math.floor(Math.random() * 10)]);
+  };
+
+  const incrementCounter = () => {
+    setCounter((prevState) => prevState + 1);
+  };
+
+  const decrementCounter = () => {
+    setCounter((prevState) => prevState - 1);
   };
 
   return (
@@ -84,8 +96,30 @@ function App() {
       </div>
       <Style />
       <Bootstrap />
-        */}
       <MapFunction />
+      <BootstrapTable />
+      <NestedMapFunction />
+      <Fragment>
+        <ReusableComponent backgroundColor={"purple"} />
+        <ReusableComponent backgroundColor={"hotpink"} />
+        <ReusableComponent backgroundColor={"orange"} />
+        <ReusableComponent backgroundColor={"coral"} />
+        <ReusableComponent backgroundColor={"green"} />
+      </Fragment>
+         */}
+      <h3>Counter: {counter}</h3>
+      <div className="buttons-container">
+        <ButtonComponent
+          handleClick={incrementCounter}
+          variant={"success"}
+          action={"Add"}
+        />
+        <ButtonComponent
+          handleClick={decrementCounter}
+          variant={"danger"}
+          action={"Subtract"}
+        />
+      </div>
     </div>
   );
 }
