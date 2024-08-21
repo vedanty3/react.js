@@ -21,6 +21,7 @@ import BootstrapTable from "./components/BootstrapTable";
 import NestedMapFunction from "./components/NestedMapFunction";
 import ReusableComponent from "./components/ReusableComponent";
 import ButtonComponent from "./components/Button";
+import PureComponent from "./components/PureComponent";
 
 const names = [
   "Alice",
@@ -55,6 +56,8 @@ function App() {
   const decrementCounter = () => {
     setCounter((prevState) => prevState - 1);
   };
+
+  console.log("parent");
 
   return (
     <div className="App">
@@ -106,7 +109,6 @@ function App() {
         <ReusableComponent backgroundColor={"coral"} />
         <ReusableComponent backgroundColor={"green"} />
       </Fragment>
-         */}
       <h3>Counter: {counter}</h3>
       <div className="buttons-container">
         <ButtonComponent
@@ -120,6 +122,15 @@ function App() {
           action={"Subtract"}
         />
       </div>
+      */}
+      <>
+        <PureComponent counter={counter} />
+        <ButtonComponent
+          handleClick={incrementCounter}
+          variant={"success"}
+          action={"Add"}
+        />
+      </>
     </div>
   );
 }
