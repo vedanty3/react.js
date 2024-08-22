@@ -22,6 +22,7 @@ import NestedMapFunction from "./components/NestedMapFunction";
 import ReusableComponent from "./components/ReusableComponent";
 import ButtonComponent from "./components/Button";
 import PureComponent from "./components/PureComponent";
+import RefComponent from "./components/RefComponent";
 
 const names = [
   "Alice",
@@ -122,7 +123,6 @@ function App() {
           action={"Subtract"}
         />
       </div>
-      */}
       <>
         <PureComponent counter={counter} />
         <ButtonComponent
@@ -131,6 +131,8 @@ function App() {
           action={"Add"}
         />
       </>
+      */}
+      <RefComponent />
     </div>
   );
 }
