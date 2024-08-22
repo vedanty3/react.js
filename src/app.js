@@ -23,6 +23,7 @@ import ReusableComponent from "./components/ReusableComponent";
 import ButtonComponent from "./components/Button";
 import PureComponent from "./components/PureComponent";
 import RefComponent from "./components/RefComponent";
+import HookComponent from "./hooks/HookComponent";
 
 const names = [
   "Alice",
@@ -131,8 +132,9 @@ function App() {
           action={"Add"}
         />
       </>
-      */}
       <RefComponent />
+      */}
+      <HookComponent />
     </div>
   );
 }
