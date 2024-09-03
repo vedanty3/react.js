@@ -12,10 +12,6 @@ import React, {
 } from "react";
 import { Button } from "react-bootstrap";
 
-const HookComponent = () => {
-  return <div></div>;
-};
-
 export const UsernameContext = createContext(null);
 
 const Login = () => {
@@ -220,4 +216,4 @@ const UseState = () => {
   );
 };
 
-export default HookComponent;
+// export default HookComponent;

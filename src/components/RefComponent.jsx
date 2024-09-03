@@ -1,4 +1,5 @@
-import React, { createRef, useRef } from "react";
+import React, { createRef, forwardRef, useRef } from "react";
+import ForwardRefComponent from "./ForwardRefComponent";
 
 /*
 class RefComponent extends React.Component {
@@ -30,15 +31,10 @@ class RefComponent extends React.Component {
 const RefComponent = () => {
   const inputRef = useRef(null);
 
-  function focus() {
-    inputRef.current.focus();
-    inputRef.current.style.backgroundColor = "salmon";
-  }
-
   return (
     <>
       <input ref={inputRef} placeholder="ref tutorial" />
-      <button onClick={focus}>focus</button>
+      <ForwardRefComponent ref={inputRef} />
     </>
   );
 };
