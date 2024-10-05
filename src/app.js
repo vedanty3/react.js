@@ -24,6 +24,10 @@ import ButtonComponent from "./components/Button";
 import PureComponent from "./components/PureComponent";
 import RefComponent from "./components/RefComponent";
 import HookComponent from "./hooks/HookComponent";
+import ControlledComponent from "./components/ControlledComponent";
+import UncontrolledComponent from "./components/UncontrolledComponent";
+import HigherOrderComponent from "./components/HigherOrderComponent";
+import UseCallbackHook from "./components/UseCallbackHook";
 
 const names = [
   "Alice",
@@ -133,8 +137,12 @@ function App() {
         />
       </>
       <HookComponent />
-    */}
       <RefComponent />
+      <ControlledComponent />
+      <UncontrolledComponent />
+      <HigherOrderComponent />
+    */}
+      <UseCallbackHook />
     </div>
   );
 }
