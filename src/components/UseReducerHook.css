@@ -1,0 +1,25 @@
+.reducer-box {
+  font-size: 18px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  border: none;
+  width: 120px;
+  background-color: blueviolet;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+button:active {
+  background-color: rgb(147, 114, 178);
+}
