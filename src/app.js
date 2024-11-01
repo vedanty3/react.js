@@ -29,6 +29,7 @@ import UncontrolledComponent from "./components/UncontrolledComponent";
 import HigherOrderComponent from "./components/HigherOrderComponent";
 import UseCallbackHook from "./components/UseCallbackHook";
 import UseReducerHook from "./components/UseReducerHook";
+import UseContextHook from "./components/UseContextHook";
 
 const names = [
   "Alice",
@@ -143,8 +144,9 @@ function App() {
       <UncontrolledComponent />
       <HigherOrderComponent />
       <UseCallbackHook />
-    */}
       <UseReducerHook />
+    */}
+      <UseContextHook />
     </div>
   );
 }
