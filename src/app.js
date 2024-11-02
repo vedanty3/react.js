@@ -30,6 +30,7 @@ import HigherOrderComponent from "./components/HigherOrderComponent";
 import UseCallbackHook from "./components/UseCallbackHook";
 import UseReducerHook from "./components/UseReducerHook";
 import UseContextHook from "./components/UseContextHook";
+import LifecycleComponent from "./components/LifecycleComponent";
 
 const names = [
   "Alice",
@@ -145,8 +146,9 @@ function App() {
       <HigherOrderComponent />
       <UseCallbackHook />
       <UseReducerHook />
-    */}
       <UseContextHook />
+    */}
+      <LifecycleComponent />
     </div>
   );
 }
