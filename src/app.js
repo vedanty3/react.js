@@ -31,6 +31,7 @@ import UseCallbackHook from "./components/UseCallbackHook";
 import UseReducerHook from "./components/UseReducerHook";
 import UseContextHook from "./components/UseContextHook";
 import LifecycleComponent from "./components/LifecycleComponent";
+import UseLayoutEffectHook from "./components/UseLayoutEffectHook";
 
 const names = [
   "Alice",
@@ -66,7 +67,7 @@ function App() {
     setCounter((prevState) => prevState - 1);
   };
 
-  console.log("parent");
+  // console.log("parent");
 
   return (
     <div className="App">
@@ -147,8 +148,9 @@ function App() {
       <UseCallbackHook />
       <UseReducerHook />
       <UseContextHook />
-    */}
       <LifecycleComponent />
+    */}
+      <UseLayoutEffectHook />
     </div>
   );
 }
